@@ -20,12 +20,10 @@ app.use(express.static("public"));
 io.on("connection", (socket) => {
     console.log("New user connected");
 
-    // Let the user know they've joined
     socket.on("join", () => {
         socket.emit("joined");
     });
 
-    // Relay offers, answers, and ICE candidates to others
     socket.on("offer", (offer) => {
         socket.broadcast.emit("offer", offer);
     });
@@ -38,7 +36,6 @@ io.on("connection", (socket) => {
         socket.broadcast.emit("ice-candidate", candidate);
     });
 
-    // Log disconnections
     socket.on("disconnect", () => {
         console.log("User disconnected");
     });

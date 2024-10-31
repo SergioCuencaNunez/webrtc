@@ -99,7 +99,6 @@ function extractCandidateInfo(sdp) {
     return { ip: null, port: null };
 }
 
-// Signaling events
 socket.on("joined", async () => {
     console.log("Room joined, creating an offer...");
     setupPeerConnection();
