@@ -21,8 +21,8 @@ This application is a simple peer-to-peer (P2P) video call app built with WebRTC
 1. Clone this repository to your local machine:
 
     ```bash
-    git clone https://github.com/your-username/webrtc-video-call-app.git
-    cd webrtc-video-call-app
+    git clone https://github.com/SergioCuencaNunez/webrtc-video-call-app.git
+    cd webrtc
     ```
 
 2. Install dependencies:
